@@ -4,7 +4,7 @@
 ## Usage
 ```
         # import generate_nvram_bin_file function to shell
-        . '"${0}"'
+        source "virtualbox-generate-nvram-bin-file.sh"
 
         # execute function
         generate_nvram_bin_file "${name}" "${data}" "${guid}"
@@ -19,6 +19,7 @@
 ## Examples
 ```
 generate_nvram_bin_file "system-id" "hAA" "7C436110-AB2A-4BBB-A880-FE41995C9F82"
+
 nvramgen "lang" "$(printf 'en:us' | xxd -p)" "aabbccddeeff00112233445566778899"
 ```
 
